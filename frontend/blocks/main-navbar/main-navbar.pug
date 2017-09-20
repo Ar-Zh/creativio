@@ -1,0 +1,7 @@
+
+mixin mainnavbar(data)
+    ul.nav.navbar-nav.navbar-right.main-navbar
+        each val in data
+            li.main-navbar__item
+                a.main-navbar__linc(href= val.url, class= val.className)= val.name
+            .main-navbar__border-item

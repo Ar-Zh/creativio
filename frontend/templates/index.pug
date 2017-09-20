@@ -1,5 +1,17 @@
 extends ../blocks/layout-default/layout-default
 
 block content
+
+    -
+        data = [
+        {name: 'Home', url: '#', className: 'active'},
+        {name: 'Pages', url: '#', className: ''},
+        {name: 'Portfolio', url: '#', className: ''},
+        {name: 'Blog', url: '#', className: ''},
+        {name: 'Archives', url: '#', className: ''},
+        {name: 'Contact', url: '#', className: ''}
+        ];
+
     include ../blocks/header/header
+    +header(data)
     include ../blocks/jumbotron/jumbotron
