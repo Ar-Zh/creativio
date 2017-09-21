@@ -4,14 +4,14 @@ block content
 
     -
         data = [
-        {name: 'Home', url: '#', className: 'active'},
-        {name: 'Pages', url: '#', className: ''},
-        {name: 'Portfolio', url: '#', className: ''},
-        {name: 'Blog', url: '#', className: ''},
-        {name: 'Archives', url: '#', className: ''},
-        {name: 'Contact', url: '#', className: ''}
+        {name: 'home', url: './index.html', className: 'active'},
+        {name: 'pages', url: './pages.html', className: ''},
+        {name: 'portfolio', url: './portfolio.html', className: ''},
+        {name: 'blog', url: './blog.html', className: ''},
+        {name: 'archives', url: './archives.html', className: ''},
+        {name: 'contact', url: './contact.html', className: ''}
         ];
 
     include ../blocks/header/header
     +header(data)
-    include ../blocks/jumbotron/jumbotron
+    include ../blocks/features/features

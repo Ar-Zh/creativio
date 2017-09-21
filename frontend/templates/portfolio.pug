@@ -1,0 +1,16 @@
+extends ../blocks/layout-default/layout-default
+
+block content
+
+    -
+        data = [
+        {name: 'Home', url: './index.html', className: ''},
+        {name: 'Pages', url: './pages.html', className: ''},
+        {name: 'Portfolio', url: './portfolio.html', className: 'active'},
+        {name: 'Blog', url: './blog.html', className: ''},
+        {name: 'Archives', url: './archives.html', className: ''},
+        {name: 'Contact', url: './contact.html', className: ''}
+        ];
+
+    include ../blocks/header/header
+    +header(data)
